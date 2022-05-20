@@ -1,9 +1,0 @@
-[package]
-name = "passwdgen"
-version = "0.1.0"
-edition = "2021"
-description = "Simple program to generate random passwords"
-
-[dependencies]
-clap = { version = "3.1.18", features = ["derive"] }
-passwords = "3.1.9"
