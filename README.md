@@ -37,19 +37,22 @@ passwdgen -h
 ```
 Options:
 ```bash
-    -c, --c <C>          Exclude similar characters [default: true]
-    -h, --help           Print help information
-    -k, --k <K>          Spaces [default: false]
-    -l, --lcl <LCL>      Lower case letters [default: true]
-    -n, --n <N>          Numbers [default: true]
-    -s, --size <SIZE>    Password lenght [default: 5]
-    -t, --t <T>          Strict [default: false]
-    -u, --ucl <UCL>      Upper case [default: true]
-    -V, --version        Print version information
-    -y, --y <Y>          Symbols [default: false]
+   OPTIONS:
+    -c, --lowercaseletters <lcl>    Contain lower case letters [default: false]
+    -h, --help                      Print help information
+    -k, --spaces <spaces>           Contain spaces [default: false]
+    -n, --numbers <numbers>         Contain numbers [default: false]
+    -o, --symbol <symbol>           Contain symbols [default: false]
+    -s, --size <size>               Password length [default: 5]
+    -t, --similar <similar>         Contain similar characters [default: false]
+    -u, --uppercaseletters <ucl>    Contain upper case letters [default: false]
+    -V, --version                   Print version information 
 ```
 
 Example:
+
+A ten-digit password containing symbols, numbers, lower case and upper case letters without repeated characters.
+
 ```bash
-passwdgen -s 12 -c false -u false
+passwdgen -s 10 -o -n -c -u
 ```
